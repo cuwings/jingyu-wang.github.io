@@ -1,0 +1,21 @@
+---
+title: "**About**"
+output: 
+  html_document:
+    toc: false
+    toc_float: false
+---
+
+# Of course, you want to check the *About* first!
+
+I'm Jingyu. 
+I'm originally from China and currently study in New York City.
+
+## Key Interest
+
+* Movies (Any types)
+* Games (Switch, Xbox, PS5, and Steam)
+* Taylor Swift's song
+* Travel
+* ....many to explore
+

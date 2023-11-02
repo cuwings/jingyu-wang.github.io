@@ -1,0 +1,22 @@
+---
+title: "**Education**"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Columbia University Mailman School of Public Health
+
+Master of Public Health, Epidemiology    
+Certificate Applied Biostatistics, Applied Biostatistics and Public Health Data Science
+
+## The Pennsylvania State University
+
+Bachelor of Science in Premedicine
+
+## University of Melbourne
+
+Exchange Student, Study Abroad Program
+
+
