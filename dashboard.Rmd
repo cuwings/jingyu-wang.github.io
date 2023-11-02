@@ -1,0 +1,66 @@
+---
+title: "NOAA"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("ny_noaa")
+
+temerature_df = ny_noaa |> 
+  janitor::clean_names() |> 
+  mutate(tmax = as.numeric(tmax)/10, tmin = as.numeric(tmin)/10, prcp = prcp/10) |> 
+  filter(snwd != 0 & snow != 0 & prcp != 0) |> 
+  drop_na(prcp) |> 
+  drop_na(tmax) |> 
+  drop_na(tmin) |> 
+  drop_na(snow) |> 
+  drop_na(snwd) |> 
+  separate(date,into = c("year","month","day"),sep = "-") |> 
+  filter(year == 2008)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+temerature_df |>
+  mutate(text_label = str_c("Station id: ", id, "\nprecipitation: ", prcp, "mm")) |> 
+  plot_ly(
+    x = ~tmin, y = ~tmax, color = ~prcp, text = ~text_label,
+    type = "scatter", mode = "markers",
+    alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+temerature_df |> 
+  mutate(month = fct_reorder(month, tmax)) |> 
+  plot_ly(x= ~month, y = ~tmax, color = ~month, type = "box", colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+temerature_df |> 
+  filter(snow > 0) |> 
+  count(id) |> 
+  mutate(id = fct_reorder(id, n)) |> 
+  plot_ly(x= ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
+```
+
