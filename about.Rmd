@@ -13,32 +13,32 @@ I'm originally from China and currently study in New York City.
 
 
 # **Education**
-## Columbia University Mailman School of Public Health   
+## Columbia University Mailman School of Public Health, *expected 2024*  
 Master of Public Health, Epidemiology    
 Certificate Applied Biostatistics, Applied Biostatistics and Public Health Data Science
 
-## The Pennsylvania State University   
+## The Pennsylvania State University, *graduated 2019*    
 Bachelor of Science in Premedicine
 
-## University of Melbourne
+## University of Melbourne, *2018*
 Exchange Student, Study Abroad Program
 
 # **Experience**
-## Database Shared Resource
+## Database Shared Resource *06/2023 - current*
 ### Student Research Assistant
 #### Herbert Irving Comprehensive Cancer Center, NY
 * Lead a collaborative study with Georgetown University, encompassing patient screening, informed consent, biospecimen collection, and comprehensive data cleaning and analysis.
 * Utilize SAS and Excel to clean, manipulate, and perform statistical analysis on patient data extracted from medical records in response to data requests.
 * Assess and improve research procedures to enhance recruitment efficiency, optimize outcomes, and uphold rigorous data quality standards.
 
-## Department of Biostatistics
+## Department of Biostatistics *09/2023 - 12/2023*
 ### Teaching Assistant 
 #### Mailman School of Public Health, NY 
 * Assist 20 students to identify, address and solve their learning challenges in course of analysis of categorical data via email, office hour, and in class.
 * Attend weekly classes with course instructors to deepen my understanding of course material.
 * Grade assignments and exams and provide feedback about common students’ difficulties and proposed learning strategies.
 
-## Renke Biotech                                               
+## Renke Biotech *01/2022 - 07/2022*                                           
 ### Clinical Trial Assistant 
 #### Beijing, China
 * Collaborated with team leaders to discuss, design, write, modify the Standard Operating Procedures for company’s early cancer detection products.
