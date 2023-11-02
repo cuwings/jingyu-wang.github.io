@@ -32,7 +32,7 @@ temerature_df = ny_noaa |>
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Maxmium and minimum temperature in year 2008 with precipitation informaiton
 
 ```{r}
 temerature_df |>
@@ -46,7 +46,7 @@ temerature_df |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Maxmium temperature of selected month in 2007
 
 ```{r}
 temerature_df |> 
@@ -54,7 +54,7 @@ temerature_df |>
   plot_ly(x= ~month, y = ~tmax, color = ~month, type = "box", colors = "viridis")
 ```
 
-### Chart C
+### Number of days with snow fall by weather stations in year 2007 
 
 ```{r}
 temerature_df |> 
