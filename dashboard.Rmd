@@ -17,7 +17,8 @@ data("ny_noaa")
 
 temerature_df = ny_noaa |> 
   janitor::clean_names() |> 
-  mutate(tmax = as.numeric(tmax)/10, tmin = as.numeric(tmin)/10, prcp = prcp/10) |> 
+  mutate(station = id,
+    tmax = as.numeric(tmax)/10, tmin = as.numeric(tmin)/10, prcp = prcp/10) |> 
   drop_na(prcp) |> 
   drop_na(tmax) |> 
   drop_na(tmin) |> 
@@ -36,11 +37,11 @@ temerature_df = ny_noaa |>
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Maxmium vs. minimum temperature in year 2008 with precipitation informaiton
+### Maxmium vs. minimum temperature in year 2008 with station and precipitation informaiton 
 
 ```{r}
 temerature_df |>
-  mutate(text_label = str_c("Station id: ", id, "\nprecipitation: ", prcp, "mm")) |> 
+  mutate(text_label = str_c("Station: ", station, "\nprecipitation: ", prcp, "mm")) |> 
   filter(prcp != 0 & snow != 0 & snwd != 0) |> 
   plot_ly(
     x = ~tmin, y = ~tmax, color = ~prcp, text = ~text_label,
@@ -64,8 +65,8 @@ temerature_df |>
 ```{r}
 temerature_df |> 
   filter(snow > 0) |> 
-  count(id) |> 
-  mutate(id = fct_reorder(id, n)) |> 
-  plot_ly(x= ~id, y = ~n, color = ~id, type = "bar", colors = "viridis")
+  count(station) |> 
+  mutate(station = fct_reorder(station, n)) |> 
+  plot_ly(x= ~station, y = ~n, color = ~station, type = "bar", colors = "viridis")
 ```
 
