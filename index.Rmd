@@ -8,18 +8,8 @@ output:
 ![](images/jingyu.jpeg)
 Dedicated and self-motivated graduated student studying in Mailman school of Public Health who is passionate about learning new stuff.
 
-
-# Skills
-* Mandarin Chinese
-* SAS
-* R
-* SQL
-* Praat
-* NVivo
-* Microsoft Office Excel, PowerPoint, and Word
-
 # Action
-Please explore my *About*, *Education*, *Experience*, and *Dashboard* !
+Please explore more details of me in my *About* and my project in *Dashboard* !
 
 # Contact Me
 ![](https://media.giphy.com/media/Kepgxs7PMy4feKIkfJ/giphy.gif)

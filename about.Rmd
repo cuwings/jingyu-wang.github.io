@@ -2,17 +2,62 @@
 title: "**About**"
 output: 
   html_document:
-    toc: false
-    toc_float: false
+    toc: true
+    toc_float: true
 ---
 
-# Of course, you want to check the *About* first!
+Of course, you want to check the *About* first!
 
 I'm Jingyu. 
 I'm originally from China and currently study in New York City.
 
-## Key Interest
 
+# **Education**
+## Columbia University Mailman School of Public Health   
+Master of Public Health, Epidemiology    
+Certificate Applied Biostatistics, Applied Biostatistics and Public Health Data Science
+
+## The Pennsylvania State University   
+Bachelor of Science in Premedicine
+
+## University of Melbourne
+Exchange Student, Study Abroad Program
+
+# **Experience**
+## Database Shared Resource
+### Student Research Assistant
+#### Herbert Irving Comprehensive Cancer Center, NY
+* Lead a collaborative study with Georgetown University, encompassing patient screening, informed consent, biospecimen collection, and comprehensive data cleaning and analysis.
+* Utilize SAS and Excel to clean, manipulate, and perform statistical analysis on patient data extracted from medical records in response to data requests.
+* Assess and improve research procedures to enhance recruitment efficiency, optimize outcomes, and uphold rigorous data quality standards.
+
+## Department of Biostatistics
+### Teaching Assistant 
+#### Mailman School of Public Health, NY 
+* Assist 20 students to identify, address and solve their learning challenges in course of analysis of categorical data via email, office hour, and in class.
+* Attend weekly classes with course instructors to deepen my understanding of course material.
+* Grade assignments and exams and provide feedback about common students’ difficulties and proposed learning strategies.
+
+## Renke Biotech                                               
+### Clinical Trial Assistant 
+#### Beijing, China
+* Collaborated with team leaders to discuss, design, write, modify the Standard Operating Procedures for company’s early cancer detection products.
+* Conducted manual and automated Magnetic Bead-based DNA extraction and library from 500+ blood and bile samples to meet the requirement of Angle funding. 
+* Conducted comprehensive literature review, compile 40+ relevant articles/patents about early cancer detection to help the development of company’s products.
+* Collected, recorded, and quality-controlled 1000+ patient blood samples from major hospitals.
+* Utilized Qsep100 system to analyze DNA/Library samples.
+* Organized and encoded data to ensure the accuracy and traceability of sample information.
+
+# **Skills**
+* Mandarin Chinese
+* SAS
+* R
+* SQL
+* Praat
+* NVivo
+* Microsoft Office Excel, PowerPoint, and Word
+
+# **Key Interest**
 * Movies (Any types)
 * Games (Switch, Xbox, PS5, and Steam)
 * Taylor Swift's song

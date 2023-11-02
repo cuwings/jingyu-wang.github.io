@@ -36,11 +36,12 @@ temerature_df = ny_noaa |>
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Maxmium and minimum temperature in year 2008 with precipitation informaiton
+### Maxmium vs. minimum temperature in year 2008 with precipitation informaiton
 
 ```{r}
 temerature_df |>
   mutate(text_label = str_c("Station id: ", id, "\nprecipitation: ", prcp, "mm")) |> 
+  filter(prcp != 0 & snow != 0 & snwd != 0) |> 
   plot_ly(
     x = ~tmin, y = ~tmax, color = ~prcp, text = ~text_label,
     type = "scatter", mode = "markers",
@@ -50,7 +51,7 @@ temerature_df |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Maxmium temperature of selected month in 2007
+### Maxmium temperature of selected month in year 2008
 
 ```{r}
 temerature_df |> 
@@ -58,7 +59,7 @@ temerature_df |>
   plot_ly(x= ~month, y = ~tmax, color = ~month, type = "box", colors = "viridis")
 ```
 
-### Number of days with snow fall by weather stations in year 2007 
+### Number of days with snow fall by weather stations in year 2008 
 
 ```{r}
 temerature_df |> 
